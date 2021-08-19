@@ -34,18 +34,21 @@ productPrice.innerText = 500
     total.innerText = priceValue;
     fee.innerText = "0"
  })
+function totalFee(fees){
+    fee.innerText = fees
+    totalfee() 
+}
+//  freeshipping.addEventListener("click",function(){
+// fee.innerText = 5
+// totalfee()
 
- freeshipping.addEventListener("click",function(){
-fee.innerText = 5
-totalfee()
-
-})
-expressShip.addEventListener("click",function(){
-fee.innerText = 30
-totalfee()
-()
+// })
+// expressShip.addEventListener("click",function(){
+// fee.innerText = 30
+// totalfee()
+// ()
     
-})
+// })
 function totalfee(){
 const productFee = fee.innerText;
 const price = productPrice.innerText;
@@ -54,6 +57,10 @@ total.innerText = totalPrice;
 
 }
 
+document.getElementById("buy").addEventListener( "click",function(){
+
+    alert("congrats mem/sir your order is confirmed.")
+})
 
 
 

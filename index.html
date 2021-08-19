@@ -46,10 +46,12 @@
               facilis ratione nobis!
             </span>
             <span class="text-4xl font-medium mt-5 ml-3" id="price">500</span><br>
-            <button id="free-ship" class="p-3 border border-red-300 bg-gray-400	rounded	 ">free shippping -5</button>
-            <button id="express-ship" class="p-3 border border-red-300 bg-gray-400	rounded "> Expres shipping-30</span></button>
+            <button id="free-ship" onclick="totalFee(5)" class="p-3 border border-red-300 bg-gray-400	rounded	 ">free shippping -5</button>
+            <button id="express-ship" onclick="totalFee(30)" class="p-3 border border-red-300 bg-gray-400	rounded "> Expres shipping-30</span></button>
             <div> shipping: <span id="fee">0</span>$</div>
             <div> total: <span id="total">000</span>$</div>
+            <button id="buy" class="p-3 border border-red-300 bg-yellow-200 text-gray-700	rounded">Buy Now</button>
+           
             <div class="flex justify-between items-center mt-40">
               
               <div
@@ -96,7 +98,7 @@
           </div>
         </div>
       </div>
-     
+      
     </main>
     <!-- Custom js -->
     <script src="js.js"></script>
